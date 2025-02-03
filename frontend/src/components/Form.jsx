@@ -1,11 +1,21 @@
-function Form({ titulo, setTitulo, img, setImg, descripcion, setDescripcion, agregarPost }) {
+function Form({
+  titulo,
+  setTitulo,
+  img,
+  setImg,
+  descripcion,
+  setDescripcion,
+  agregarPost,
+}) {
   return (
     <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        agregarPost();
-      }}
-    >
+  className="form"
+  onSubmit={(e) => {
+    e.preventDefault();
+    agregarPost();
+  }}
+>
+    
       <div>
         <label>Título</label>
         <input

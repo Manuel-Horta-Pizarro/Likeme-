@@ -6,19 +6,21 @@ export const getPosts = async () => {
   return response.json();
 };
 
-export const createPost = async (post) => {
+export const addPost = async (post) => {
   const response = await fetch(API_URL, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify(post),
   });
-  if (!response.ok) throw new Error("Error al crear el post");
+  if (!response.ok) throw new Error("Error al agregar el post");
   return response.json();
 };
 
 export const likePost = async (postId) => {
-  const response = await fetch(`${API_URL}/${postId}`, {
-    method: "PUT",
+  const response = await fetch(`${API_URL}/${postId}/like`, {
+    method: "PATCH",
   });
   if (!response.ok) throw new Error("Error al dar like al post");
   return response.json();

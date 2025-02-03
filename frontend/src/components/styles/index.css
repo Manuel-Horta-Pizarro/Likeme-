@@ -1,34 +1,117 @@
+/* Estilo General */
 body {
-  background: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc; /* Fondo claro */
+  color: #333;
 }
 
-.form {
-  padding: 15px;
-  background: #0d47a1;
+h1 {
+  font-size: 2rem;
+  color: #004aad; /* Azul oscuro */
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor Principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Formulario */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+}
+
+form button {
+  background-color: #43a047; /* Verde */
   color: white;
-}
-
-.card-body {
-  background: #e1e2e1;
-}
-
-#creado {
-  background: #002b55;
-}
-
-.card {
-  background: transparent !important;
-  border: none !important;
-}
-
-.fa-solid {
-  color: red;
-}
-
-i {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
 }
-.App {
-  font-family: sans-serif;
+
+form button:hover {
+  background-color: #388e3c;
+}
+
+/* Tarjetas */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
   text-align: center;
+}
+
+.card h3 {
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.card button {
+  margin: 5px;
+  background: #e53935; /* Rojo */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #c62828;
+}
+
+.card button:first-of-type {
+  background: #43a047; /* Verde */
+}
+
+.card button:first-of-type:hover {
+  background: #388e3c;
 }
